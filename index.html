@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" class="dark"> <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphicLinesPK – Official Website of Villan Aqib</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Custom styles if needed, but mostly rely on Tailwind */
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font */
+            transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
+        }
+        /* Style for sticky nav bar */
+        .sticky-nav {
+            position: sticky;
+            top: 0;
+            z-index: 50; /* Ensure it stays on top */
+        }
+        /* Dark mode styles handled by Tailwind 'dark:' prefix */
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-green-50 dark:bg-green-900 text-gray-900 dark:text-gray-100">
+
+    <nav class="sticky-nav bg-white dark:bg-gray-800 shadow-md p-4">
+        <div class="container mx-auto flex justify-between items-center flex-wrap"> <a href="#homepage" class="text-xl font-bold text-gray-900 dark:text-white mr-6 mb-2 md:mb-0">GraphicLinesPK</a>
+
+            <div class="hidden md:flex space-x-6 flex-grow mb-2 md:mb-0"> <a href="#homepage" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Home</a>
+                <a href="#portfolio" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Portfolio</a>
+                <a href="#services" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Services</a>
+                <a href="#contact" class="hover:text-blue-600 dark:hover:text-blue-400 transition duration-300">Contact</a>
+                </div>
+
+            <div class="flex items-center space-x-4">
+                <div class="relative">
+                    <input type="text" id="search-input" placeholder="Search..." class="p-2 pl-8 rounded-md border border-gray-300 dark:border-gray-600 bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-gray-100 focus:outline-none focus:ring-blue-500 focus:border-blue-500 w-full md:w-48">
+                    <i class="fas fa-search absolute left-2.5 top-3 text-gray-400 dark:text-gray-500"></i>
+                </div>
+                <button id="darkModeToggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 focus:outline-none">
+                    <i class="fas fa-sun dark:hidden"></i> <i class="fas fa-moon hidden dark:inline-block"></i> </button>
+
+                 <button id="mobileMenuButton" class="md:hidden p-2 rounded-md text-gray-800 dark:text-gray-200 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden mt-4 space-y-2">
+            <a href="#homepage" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Home</a>
+            <a href="#portfolio" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Portfolio</a>
+            <a href="#services" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Services</a>
+             <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-200 dark:hover:bg-gray-700">Contact</a>
+            </div>
+    </nav>
+
+    <main class="container mx-auto p-6">
+
+        <section id="homepage" class="py-16 min-h-screen flex items-center">
+            <div class="max-w-3xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I’m Villan Aqib</h1>
+                <h2 class="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 mb-6">Welcome to Graphic Lines</h2>
+                <p class="text-lg mb-8">This is where technology meets creativity. I’m a Graphic Designer & Tech Content Creator helping people explore the power of design and AI tools!</p>
+
+                <div class="space-y-4 md:space-y-0 md:space-x-6 flex flex-col md:flex-row justify-center">
+                    <a href="#portfolio" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">🎨 View Portfolio</a>
+                    <a href="#services" class="bg-gray-700 hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">💼 See My Services</a>
+                    <a href="[Insert YouTube Channel Link]" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">📺 Watch on YouTube</a>
+                </div>
+                 <div class="mt-6 space-y-4 md:space-y-0 md:space-x-6 flex flex-col md:flex-row justify-center">
+                     <a href="https://www.facebook.com/share/1Adtk7jmdVides" target="_blank" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg"><i class="fab fa-facebook-f mr-2"></i>Free Faidha Playlist</a>
+                     <a href="https://www.facebook.com/share/1Adtk7jmdV/" target="_blank" class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg"><i class="fab fa-facebook-f mr-2"></i>Follow on Facebook</a>
+                 </div>
+
+                <div class="mt-16 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-4">Why Choose Me?</h3>
+                    <p class="text-lg">
+                        [Content about your unique skills, approach, and benefits of working with you goes here.
+                        Highlight your blend of design and AI expertise.]
+                    </p>
+                    </div>
+
+                 <div class="mt-12">
+                     <h3 class="text-2xl font-semibold mb-4">Hear My Welcome Message</h3>
+                     <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                         <p class="text-center text-gray-600 dark:text-gray-400">
+                             [Audio Player Widget Embed Code Here]
+                         </p>
+                         <p class="mt-4 text-center italic">"Hey, thanks for visiting! I’m Villan Aqib. Feel free to explore my work."</p>
+                     </div>
+                 </div>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="py-16 min-h-screen">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">🎨 My Portfolio</h2>
+            <p class="text-center text-lg mb-12 max-w-2xl mx-auto">Take a look at my latest design projects! From branding to thumbnails — if you like what you see, don’t wait. Contact me today!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Logos</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief description of logo projects]</p>
+                    <div class="grid grid-cols-1 gap-4">
+                        <img src="/files/1745058457204.jpg" alt="Graphic Lines Logo" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/300x200/FF0000/FFFFFF?text=Error+Loading+Image';">
+                        </div>
+                     <div class="mt-6">
+                         <h4 class="text-lg font-semibold mb-3">Interactive Showcase (Placeholder)</h4>
+                         <p class="text-gray-600 dark:text-gray-400">
+                             [Implement Before/After sliders or hover animations here.
+                             Tools like Webflow animations or LottieFiles can be used.]
+                         </p>
+                     </div>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Thumbnails</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief description of thumbnail projects]</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://placehold.co/320x180/E0E0E0/333333?text=Thumbnail+1" alt="Placeholder Thumbnail 1" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/320x180/FF0000/FFFFFF?text=Error+Loading+Image';">
+                        <img src="https://placehold.co/320x180/E0E0E0/333333?text=Thumbnail+2" alt="Placeholder Thumbnail 2" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/320x180/FF0000/FFFFFF?text=Error+Loading+Image';">
+                    </div>
+                 </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Social Media Banners</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief description of social media banner projects]</p>
+                    <div class="grid grid-cols-1 gap-4"> <img src="https://placehold.co/600x200/E0E0E0/333333?text=AI+Banner+1" alt="Placeholder AI Banner 1" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x200/FF0000/FFFFFF?text=Error+Loading+Image';">
+                        <img src="https://placehold.co/600x200/E0E0E0/333333?text=AI+Banner+2" alt="Placeholder AI Banner 2" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/600x200/FF0000/FFFFFF?text=Error+Loading+Image';">
+                    </div>
+                 </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Gaming Logo</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief description of gaming logo projects]</p>
+                    <div class="grid grid-cols-2 gap-4">
+                         <img src="https://placehold.co/150x150/E0E0E0/333333?text=AI+Gaming+Logo+1" alt="Placeholder AI Gaming Logo 1" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/150x150/FF0000/FFFFFF?text=Error+Loading+Image';">
+                        <img src="https://placehold.co/150x150/E0E0E0/333333?text=AI+Gaming+Logo+2" alt="Placeholder AI Gaming Logo 2" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/150x150/FF0000/FFFFFF?text=Error+Loading+Image';">
+                    </div>
+                 </div>
+
+                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">Video Editing</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief description of video editing projects]</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-200 dark:bg-gray-700 h-32 rounded-md flex items-center justify-center text-gray-500 dark:text-gray-400">Project 9</div>
+                        <div class="bg-gray-200 dark:bg-gray-700 h-32 rounded-md flex items-center justify-center text-gray-500 dark:text-gray-400">Project 10</div>
+                    </div>
+                 </div>
+
+                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">CV Making</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief description of CV making projects]</p>
+                    <div class="grid grid-cols-2 gap-4">
+                         <img src="https://placehold.co/250x350/E0E0E0/333333?text=CV+Design+1" alt="Placeholder CV Design 1" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/250x350/FF0000/FFFFFF?text=Error+Loading+Image';">
+                        <img src="https://placehold.co/250x350/E0E0E0/333333?text=CV+Design+2" alt="Placeholder CV Design 2" class="w-full h-auto rounded-md object-cover" onerror="this.onerror=null; this.src='https://placehold.co/250x350/FF0000/FFFFFF?text=Error+Loading+Image';">
+                    </div>
+                 </div>
+
+                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-4">AI Art</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief description of AI Art projects]</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gray-200 dark:bg-gray-700 h-32 rounded-md flex items-center justify-center text-gray-500 dark:text-gray-400">Project 13</div>
+                        <div class="bg-gray-200 dark:bg-gray-700 h-32 rounded-md flex items-center justify-center text-gray-500 dark:text-gray-400">Project 14</div>
+                    </div>
+                 </div>
+
+            </div>
+
+            <div class="text-center mt-12">
+                 <a href="https://www.facebook.com/profile.php?id=61569739343185" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg inline-block">🔗 Graphic Lines FB Page</a>
+            </div>
+        </section>
+
+        <section id="services" class="py-16 min-h-screen">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">💼 My Services</h2>
+            <p class="text-center text-lg mb-12 max-w-2xl mx-auto">Get creative solutions for your brand or content!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-gem text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">🎯 Logo Design</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of logo design service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-film text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">🎬 YouTube Thumbnails</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of YouTube thumbnail service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-image text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">📱 Social Media Banners</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of social media banner service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                </div>
+
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-robot text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">🤖 AI Art Creation</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of AI Art creation service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                 </div>
+
+                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-video text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">🎞️ Video Editing</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of video editing service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                 </div>
+
+                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-gamepad text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">🎮 Gaming logo</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of gaming logo service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                 </div>
+
+                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-file-alt text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">CV Making</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of CV making service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                 </div>
+
+                 <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-bullhorn text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">AI Ads Making</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of AI Ads making service]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Order Now]</button>
+                 </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 text-center">
+                    <i class="fas fa-ellipsis-h text-4xl text-blue-600 dark:text-blue-400 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-4">And Many More</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6">[Brief description of other potential services]</p>
+                    <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 shadow-lg">[Inquire Now]</button>
+                 </div>
+            </div>
+
+            <div class="mt-16 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-2xl mx-auto">
+                <h3 class="text-2xl font-semibold text-center mb-4">🧠 AI Project Estimator (Placeholder)</h3>
+                <p class="text-center text-gray-600 dark:text-gray-400 mb-6">
+                    [Interactive form goes here where visitors can choose service type (Logo, Thumbnail, etc.) to get an estimate.]
+                </p>
+                <form>
+                    <div class="mb-4">
+                        <label for="serviceType" class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">What do you need?</label>
+                        <select id="serviceType" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600">
+                            <option value="">-- Select a Service --</option>
+                            <option value="logo">Logo</option>
+                            <option value="thumbnail">Thumbnail</option>
+                            <option value="video-editing">Video Editing</option>
+                            <option value="gaming-logo">Gaming Logo</option>
+                            <option value="banners">Banners</option>
+                            <option value="posters">Posters</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition duration-300">Get Estimate</button>
+                    </div>
+                </form>
+            </div>
+
+             <div class="mt-16 p-8 bg-white dark:bg-gray-800 rounded-lg shadow-lg max-w-2xl mx-auto text-center">
+                 <h3 class="text-2xl font-semibold mb-4">📅 Book a Free Discovery Call</h3>
+                 <p class="text-gray-600 dark:text-gray-400 mb-6">
+                     [Embed Calendly or TidyCal widget here for direct booking.]
+                 </p>
+                 <button class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg">
+                     Book Your Call
+                 </button>
+             </div>
+
+        </section>
+
+        <section id="recent-posts" class="py-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-10">📝 Recent Posts</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">Top AI Tools for Creators in 2025</h3>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">Date: [Insert Date]</p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief excerpt of the post content]</p>
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Read More</a>
+                </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">My YouTube Setup – Behind the Scenes</h3>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">Date: [Insert Date]</p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief excerpt of the post content]</p>
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Read More</a>
+                 </div>
+                <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+                    <h3 class="text-xl font-semibold mb-3">Design Trends This Year</h3>
+                    <p class="text-gray-700 dark:text-gray-300 text-sm mb-4">Date: [Insert Date]</p>
+                    <p class="text-gray-700 dark:text-gray-300 mb-4">[Brief excerpt of the post content]</p>
+                    <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Read More</a>
+                 </div>
+            </div>
+
+            <div class="text-center mt-12">
+                 <a href="[Insert YouTube Channel Link]" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg inline-block">🎥 Visit YouTube Channel</a>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 min-h-screen flex items-center justify-center">
+            <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 max-w-md w-full">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">📬 Let’s Work Together!</h2>
+                <p class="text-center text-lg mb-8">Get in touch to discuss your project.</p>
+
+                <div class="space-y-4 mb-8">
+                    <p><strong class="font-semibold">Name:</strong> Villan Aqib</p>
+                    <p><strong class="font-semibold">Email:</strong> <a href="mailto:graphiclines.pk@gmail.com" class="text-blue-600 dark:text-blue-400 hover:underline">graphiclines.pk@gmail.com</a></p>
+                    <p><strong class="font-semibold">WhatsApp:</strong> <a href="https://wa.me/923488384482" target="_blank" class="text-green-600 hover:underline">+92 348 8384482</a></p>
+                    <p><strong class="font-semibold">Address:</strong> Punjab, Pakistan</p>
+                </div>
+
+                <h3 class="text-2xl font-semibold text-center mb-6">Send a Message</h3>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600" placeholder="Your Name">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600" placeholder="Your Email">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" rows="5" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:text-gray-200 leading-tight focus:outline-none focus:shadow-outline bg-gray-100 dark:bg-gray-700 border-gray-300 dark:border-gray-600" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="flex items-center justify-center">
+                        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline transition duration-300">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section id="social-media" class="py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">🔗 Stay Connected!</h2>
+            <div class="flex justify-center space-x-6 text-4xl">
+                <a href="www.youtube.com/@Life_Aqib_Tv" target="_blank" class="text-red-600 hover:text-red-700 transition duration-300"><i class="fab fa-youtube"></i></a>
+                <a href="www.instagram.com/@life_aqib_tv" target="_blank" class="text-pink-600 hover:text-pink-700 transition duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="[Behance/Dribbble Link]" target="_blank" class="text-blue-800 hover:text-blue-900 transition duration-300"><i class="fab fa-behance"></i></a>
+                 <a href="www.tiktok.com/@Life_aqib_tv" target="_blank" class="text-black dark:text-white hover:text-gray-700 dark:hover:text-gray-300 transition duration-300"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.facebook.com/share/1Adtk7jmdV/" target="_blank" class="text-blue-800 hover:bg-blue-900 transition duration-300"><i class="fab fa-facebook"></i></a>
+            </div>
+        </section>
+
+        <section id="client-dashboard" class="py-16 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">🧑‍💻 Client Dashboard (Placeholder)</h2>
+            <p class="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+                [This would be a secure login area for returning clients to view past orders, download designs, etc.
+                Requires backend development.]
+            </p>
+            <div class="mt-6">
+                 <a href="#" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 shadow-lg inline-block">Client Login</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 dark:bg-gray-900 text-white py-8 text-center">
+        <div class="container mx-auto">
+            <p>© 2025 GraphicLinesPK. All rights reserved.</p>
+            </div>
+    </footer>
+
+    <script>
+        // JavaScript for Dark Mode Toggle
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const htmlElement = document.documentElement;
+
+        // Check local storage for theme preference
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme) {
+            htmlElement.classList.add(currentTheme);
+        } else {
+             // Default to dark mode if no preference is set (based on your request)
+             htmlElement.classList.add('dark');
+        }
+
+
+        darkModeToggle.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                htmlElement.classList.add('light');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.remove('light');
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // JavaScript for Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobileMenuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+         // Close mobile menu when a link is clicked
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Basic Smooth Scrolling for Navigation Links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Placeholder JavaScript for Search (does not perform actual search)
+        const searchInput = document.getElementById('search-input');
+        // You would add an event listener here to perform search when the user types or presses Enter
+        // For example:
+        // searchInput.addEventListener('keypress', function(event) {
+        //     if (event.key === 'Enter') {
+        //         performSearch(searchInput.value); // Call your search function
+        //     }
+        // });
+        // Or with a search button:
+        // const searchButton = document.getElementById('search-button');
+        // searchButton.addEventListener('click', function() {
+        //     performSearch(searchInput.value); // Call your search function
+        // });
+
+        function performSearch(query) {
+            console.log("Search initiated for:", query);
+            // Implement your search logic here.
+            // This would typically involve filtering content on the page
+            // or sending a request to a backend search service.
+            alert("Search functionality is a placeholder. Implement your search logic here for '" + query + "'.");
+        }
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fade-in Animation</title>
+  <style>
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="fade-in">Welcome to Graphic Lines PK</h1>
+</body>
+</html>
+```
+
+
+
+
+---
+
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Zoom</title>
+  <style>
+    .zoom-image {
+    </script>
+
+</body>
+</html>
